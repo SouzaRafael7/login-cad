@@ -21,7 +21,8 @@ function salvarUser(){
 
     if(nomeUser){
         dadosLista.push(nomeUser);
-        console.log(dadosLista)
+        console.log(dadosLista);
+        document.getElementById('nomeUser').value = "";
     } 
     else{
         alert("Favor informar o nome");
