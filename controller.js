@@ -8,6 +8,21 @@ function acessar(){
     }else{
         alert('Campos preenchidos com sucesso');
         
-        window.location.href = 'cadastro.html'
+        window.location.href = 'cadastro.html';
+    }
+}
+
+//Função de criação do array para armazenamento de dados
+
+var dadosLista = [];
+
+function salvarUser(){
+    let nomeUser = document.getElementById('nomeUser').value;
+
+    if(nomeUser){
+
+    } 
+    else{
+        alert("Favor informar o nome");
     }
 }
