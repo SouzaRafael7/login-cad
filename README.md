@@ -14,6 +14,7 @@ Validar o login: Verifica se os campos de e-mail e senha foram preenchidos antes
 Como Funciona:
 ## Funções
 **Função de criação do array para armazenamento de dados**
+
 Este bloco de código adiciona um novo nome de usuário à lista, exibe a lista atualizada no console do navegador e, em seguida, chama uma função para atualizar a interface do usuário (provavelmente uma tabela HTML) com a nova lista de nomes.
 
 console.log(): É uma função do JavaScript que envia informações para o console do navegador (ferramenta de desenvolvedor).
@@ -27,6 +28,7 @@ nomeUser: É uma variável que contém o nome do usuário que foi inserido pelo 
 O que acontece: Esta linha adiciona o nomeUser à lista dadosLista, expandindo a lista com o novo valor.
 
 **FUNÇÃO DE CRIAÇÃO DE LISTA**
+
 Objetivo: Cria a tabela HTML com os nomes de usuários e seus respectivos botões de exclusão e edição.
 
 let tabela =:
@@ -59,6 +61,7 @@ onclick='excluir(this.parentNode.parentNode.rowIndex)': Atribui um evento onclic
 this.parentNode.parentNode.rowIndex: Essa expressão complexa é usada para obter o índice da linha atual. Ela funciona navegando pela estrutura do DOM para encontrar o elemento <tr> pai da célula que contém o botão.
 
 **FUNÇÃO PARA EXCLUIR NOME DA LISTA**
+
 Remove um nome da lista e da tabela.
 
 deleteRow() é um método aplicado ao elemento tabela encontrado no passo anterior.
@@ -66,6 +69,7 @@ deleteRow() é um método aplicado ao elemento tabela encontrado no passo anteri
 Splice é uma das maneiras mais úteis de manipular arrays em JavaScript. Ele permite remover ou adicionar elementos em uma posição específica de um array
 
 **FUNÇÃO PARA EDITAR O NOME NA LISTA**
+
 Objetivo: Edita um nome da lista.
 Nesta parte do codigo utliza-se quase os mesmos do codigo da função de excluir. O delete row e o splice.
 
