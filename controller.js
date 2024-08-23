@@ -1,50 +1,36 @@
 //FUNÇÃO DE CRIAÇÃO DE ARRAY PARA ARMAZENAMENTO DE NOMES
- 
-var dadosLista = [];
-function salvarUser() {
-    let nomeUser = document.getElementById('nomeUser').value;
- 
-    if (nomeUser) {
-        dadosLista.push(nomeUser);
-        console.log(dadosLista);
-        document.getElementById('nomeUser').value = "";
- 
-    } else {
-        alert("Favor, informe um nome")
-    }
-}
+
 // Validação de preenchimento
 function acessar() {
     let loginEmail = document.getElementById('loginEmail').value;
     let loginSenha = document.getElementById('loginSenha').value;
- 
+
     if (!loginEmail || !loginSenha) {
         alert('Favor preencher todos os campos');
     } else {
         alert('Campos preenchidos com sucesso');
- 
+
         window.location.href = 'cadastro.html';
     }
 }
- 
-// FUNÇÃO PARA VERIFICAÇÃO DE VALIDADE DE E-MAIL INFORMADO
-function verificaEmail() {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(emailUser);
-}
- 
-//Função de criação do array para armazenamento de dados
 
+
+//Função de criação do array para armazenamento de dados
 var emailLista = [];
- 
+var dadosLista = [];
+
 function salvarUser() {
+
     let nomeUser = document.getElementById('nomeUser').value;
     let emailUser = document.getElementById('emailUser').value;
- 
+
     // Chama função de verificação de e-mail
-    verificaEmail();
- 
-    if (nomeUser && emailUser) {
+    if(document.getElementById('emailUser').value == "" || document.getElementById('emailUser').value.indexOf('@') == -1 || document.getElementById('emailUser').value.indexOf('.') == -1){
+        alert("Por favor, informe um e-mail válido")
+        return false;
+    }
+    
+    if(nomeUser && emailUser){
         dadosLista.push(nomeUser);
         emailLista.push(emailUser);
         //console.log(dadosLista);
@@ -56,7 +42,8 @@ function salvarUser() {
         alert("Favor informar nome e e-mail");
     }
 }
- 
+
+
 // FUNÇÃO DE CRIAÇÃO DE LISTA0
 function criarLista() {
     let tabela = document.getElementById('tabela').innerHTML = "<tr><th>Nome Usuário</th><th>Email</th><th>Ações</th></tr>";
