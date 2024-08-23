@@ -7,7 +7,7 @@
 ## Introdução
 O código JavaScript fornecido implementa um sistema básico de cadastro e gerenciamento de usuários em uma página web. Ele permite:
 
-Validar o login: Verifica se os campos de e-mail e senha foram preenchidos antes de permitir o acesso a outra página, cadastrar usuários,  permite adicionar novos nomes de usuários a uma lista, gerenciar a lista de usuários, exibe a lista de usuários em uma tabela, permitindo excluir e editar os nomes.
+Validar o login: Verifica se os campos de e-mail e senha foram preenchidos antes de permitir o acesso a outra página, cadastrar usuários,  permite adicionar novos nomes e email de usuários a uma lista, gerenciar a lista de usuários, exibe a lista de usuários em uma tabela, permitindo excluir e editar os nomes e emails.
 
 ![Site](/img/Edita-exclui.gif)
 
@@ -27,7 +27,7 @@ nomeUser: É uma variável que contém o nome do usuário que foi inserido pelo 
 
 O que acontece: Esta linha adiciona o nomeUser à lista dadosLista, expandindo a lista com o novo valor.
 
-**FUNÇÃO DE CRIAÇÃO DE LISTA:**
+**FUNÇÃO DE CRIAÇÃO DE LISTA NOME:**
 
 Objetivo: Cria a tabela HTML com os nomes de usuários e seus respectivos botões de exclusão e edição.
 
@@ -59,6 +59,10 @@ tabela += ...: A cada iteração do loop, uma nova linha de HTML é adicionada �
 onclick='excluir(this.parentNode.parentNode.rowIndex)': Atribui um evento onclick ao botão. Quando o botão é clicado, a função excluir é chamada, passando como argumento o índice da linha na tabela.
 
 this.parentNode.parentNode.rowIndex: Essa expressão complexa é usada para obter o índice da linha atual. Ela funciona navegando pela estrutura do DOM para encontrar o elemento <tr> pai da célula que contém o botão.
+
+**FUNÇÃO DE CRIAÇÃO DE LISTA EMAIL**
+
+Apos a criação da lista do nome adicionamos uma nova linha para colocar o e-mail do usuário onde usamos os mesmos códigos da criação da lista do nome. O usuário pode editar e excluir o nome na mesma tabela, aparecendo um do lado do outro e podendendo edita e excluir um de cada vez se desejado. Porém esse código verifica se o email é válido.
 
 **FUNÇÃO PARA EXCLUIR NOME DA LISTA:**
 
