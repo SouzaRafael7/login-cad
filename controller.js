@@ -65,5 +65,6 @@ function editar(i) {
     document.getElementById("nomeUser").value = dadosLista[(i - 1)];
     document.getElementById("emailUser").value = emailLista[(i - 1)];
     dadosLista.splice(dadosLista[(i - 1)], 1);
+    emailLista.splice(emailLista[(i - 1)], 1);
 }
 // TEM A FUNÇÃO DE VALIDAR O EMAIL ANTES DE ENVIA-LO PARA O PROJETO.

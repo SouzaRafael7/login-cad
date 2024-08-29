@@ -61,8 +61,21 @@ onclick='excluir(this.parentNode.parentNode.rowIndex)': Atribui um evento onclic
 this.parentNode.parentNode.rowIndex: Essa expressão complexa é usada para obter o índice da linha atual. Ela funciona navegando pela estrutura do DOM para encontrar o elemento <tr> pai da célula que contém o botão.
 
 **FUNÇÃO DE CRIAÇÃO DE LISTA EMAIL**
+O código implementa um sistema simples para cadastro de usuários, onde os dados são armazenados em arrays e exibidos em uma tabela HTML e ainda exibe se tem algum erro no email antes de ser enviado. As funções permitem adicionar novos usuários, excluir existentes e (em teoria) editá-los. 
 
-Apos a criação da lista do nome adicionamos uma nova linha para colocar o e-mail do usuário onde usamos os mesmos códigos da criação da lista do nome. O usuário pode editar e excluir o nome na mesma tabela, aparecendo um do lado do outro e podendendo edita e excluir um de cada vez se desejado. Porém esse código verifica se o email é válido.
+Funcionamento:
+Obtém os valores dos inputs: Busca os valores dos campos de entrada com os IDs nomeUser e emailUser e os armazena nas variáveis nomeUser e emailUser, respectivamente.
+
+Validação do e-mail: Verifica se o e-mail inserido é válido. Para isso, checa se o campo está vazio ou se não contém o caractere @ ou o ponto . (que são essenciais para um formato de e-mail válido).
+
+Armazena os dados:
+Se o e-mail for válido e ambos os campos estiverem preenchidos, os valores são adicionados aos arrays dadosLista e emailLista usando o método push().
+
+Chama a função criarLista() para atualizar a tabela na página com os novos dados.
+
+Limpa os campos de entrada para que o usuário possa inserir novos dados.
+
+Exibe mensagem de erro: Se algum dos campos estiver vazio, exibe uma mensagem alertando o usuário.
 
 **FUNÇÃO PARA EXCLUIR NOME DA LISTA:**
 
