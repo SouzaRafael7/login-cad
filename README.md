@@ -15,15 +15,19 @@ Como Funciona:
 ## Funções
 **FUNÇÃO DE CRIAÇÃO DE UM ARRAY PARA ARMAZENAMENTO DE DADOS:**
 
-Este bloco de código adiciona um novo nome de usuário à lista, exibe a lista atualizada no console do navegador e, em seguida, chama uma função para atualizar a interface do usuário (provavelmente uma tabela HTML) com a nova lista de nomes.
+Este bloco de código adiciona um novo nome de usuário e email à lista, exibe a lista atualizada no console do navegador e, em seguida, chama uma função para atualizar a interface do usuário (provavelmente uma tabela HTML) com a nova lista de nomes.
 
 console.log(): É uma função do JavaScript que envia informações para o console do navegador (ferramenta de desenvolvedor).
 
 dadosLista: É um array (lista) que armazena os nomes dos usuários. Este array é definido em uma parte anterior do código que não foi mostrada.
 
-.push(): É um método do array que adiciona um novo elemento ao final do array.
+emailLista: É um array (lista) que armazena os emails digitados dos usuários
+
+push(): É um método do array que adiciona um novo elemento ao final do array.
 
 nomeUser: É uma variável que contém o nome do usuário que foi inserido pelo usuário em algum campo de entrada (provavelmente um input de texto).
+
+emailUser: É uma variável que contém o email do usuário que foi inserido pelo usuário em algum campo de entrada (provavelmente um input de email).
 
 O que acontece: Esta linha adiciona o nomeUser à lista dadosLista, expandindo a lista com o novo valor.
 
@@ -79,7 +83,7 @@ Exibe mensagem de erro: Se algum dos campos estiver vazio, exibe uma mensagem al
 
 **FUNÇÃO PARA EXCLUIR NOME DA LISTA:**
 
-Remove um nome da lista e da tabela.
+Remove o nome  email da lista e da tabela.
 
 deleteRow() é um método aplicado ao elemento tabela encontrado no passo anterior.
 
@@ -87,8 +91,8 @@ Splice é uma das maneiras mais úteis de manipular arrays em JavaScript. Ele pe
 
 **FUNÇÃO PARA EDITAR O NOME NA LISTA:**
 
-Objetivo: Edita um nome da lista.
-Nesta parte do codigo utliza-se quase os mesmos do codigo da função de excluir. O delete row e o splice.
+Objetivo: Edita um nome e email adicionado a lista.
+Nesta parte do codigo utliza-se quase os mesmos do codigo da função de excluir, o delete row e o splice, porém você pode editar um elemento de cada vez. 
 
 ## Tecnologias Utilizadas
 * [<code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5"/></code>](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
