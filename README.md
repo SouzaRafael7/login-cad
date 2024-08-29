@@ -9,7 +9,7 @@ O código JavaScript fornecido implementa um sistema básico de cadastro e geren
 
 Validar o login: Verifica se os campos de e-mail e senha foram preenchidos antes de permitir o acesso a outra página, cadastrar usuários,  permite adicionar novos nomes e email de usuários a uma lista, gerenciar a lista de usuários, exibe a lista de usuários em uma tabela, permitindo excluir e editar os nomes e emails.
 
-![Site](/img/Edita-exclui.gif)
+![Site](/img/nome-e-email-validador.gif)
 
 Como Funciona:
 ## Funções
